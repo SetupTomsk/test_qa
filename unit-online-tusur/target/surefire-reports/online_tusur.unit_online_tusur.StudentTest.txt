@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: online_tusur.unit_online_tusur.StudentTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.05 s <<< FAILURE! - in online_tusur.unit_online_tusur.StudentTest
+testP2_1  Time elapsed: 0.018 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Пабло Диего Хосе Франциско де Паула Хуан Непомукено Криспин Криспиано де ла Сантисима Тринидад Руиз> but was: <Пабло диего хосе франциско де паула хуан непомукено криспин криспиано де ла сантисима тринидад руиз>
+	at online_tusur.unit_online_tusur.StudentTest.testP2_1(StudentTest.java:78)
+
