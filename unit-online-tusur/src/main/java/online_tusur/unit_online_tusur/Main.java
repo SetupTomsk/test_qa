@@ -45,8 +45,9 @@ public class Main {
 /*				System.out.println(s3.getFullName() + ", " + s3.getAge());
 			
 			
+
 			Student[] students = { s1,s2,s3};
-			  Student[] students2 = {new Student("Alexandr", "Ivanov", 20), new Student("Vladimir", "Petrov", 18),
+		    Student[] students2 = {new Student("Alexandr", "Ivanov", 20), new Student("Vladimir", "Petrov", 18),
 						new Student("Aleksey", "Alekseev", 35)};
 			
 			System.out.println("AVG= "+Student.avgAge(students2));

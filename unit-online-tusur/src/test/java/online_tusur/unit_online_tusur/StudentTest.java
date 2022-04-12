@@ -1,16 +1,28 @@
 package online_tusur.unit_online_tusur;
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.*;
+
+import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestFactory;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
 
 public class StudentTest {
 	/*объект тестового класса  Student*/
-	private Student s = new Student();	 	   
-
+//	private Student s = new Student();	 	   
+//	private Student s1 = new Student();
+//	private Student s2 = new Student();
 	    
-/* проверка возраста студента, выходящего за диапазон */
+/* проверка возраста студента, выходящего за диапазон 
 	@Tag ("Negative")
 	@Test
 	  void testN1_1() {
@@ -20,7 +32,7 @@ public class StudentTest {
 		int actualsAge=s.getAge();
 		assertEquals(expectedAge, actualsAge);	
 	  }
-/* проверка имени студента, начинающегося со строчной буквы */
+/* проверка имени студента, начинающегося со строчной буквы
 	@Tag ("Negative")
 	@Test
 	  void testN1_2() {
@@ -30,7 +42,7 @@ public class StudentTest {
 		String actualName=s.getLastName();
 	    assertEquals(expectedName, actualName);	
 	  }
-/* проверка что все буквы фамилия, кроме первой, преобразуется в строчные буквы */
+/* проверка что все буквы фамилия, кроме первой, преобразуется в строчные буквы 
 	
 	@Tag ("Negative")
 	@Test
@@ -41,7 +53,7 @@ public class StudentTest {
 		String actualLName=s.getLastName();
 	    assertEquals(expectedLName, actualLName);	
 	  }
-/* проверка что правильно выводится полное имя "Фамилия Имя" */
+/* проверка что правильно выводится полное имя "Фамилия Имя" 
 	
 	@Tag ("Negative")
 	@Test
@@ -55,7 +67,7 @@ public class StudentTest {
 		assertEquals(expectedFullName, actualFullName);	
 	  }
 
-/* проверка что правильно выводится Имя" */	  
+/* проверка что правильно выводится Имя"   
 	
 	  @Tag ("Positive")
 	  @Test 
@@ -78,7 +90,7 @@ public class StudentTest {
 	    assertEquals(expectedName, actualName);
 	   }
 
-/* проверка что правильно выводится фамилия" */	
+/* проверка что правильно выводится фамилия" 
 	  
 	  @Tag ("Positive")
 	  @Test 
@@ -90,7 +102,7 @@ public class StudentTest {
 	    assertEquals(expectedLName, actualLName);
 	   }
 
-/* проверка что правильно выводится полное имя "Фамилия Имя" на английском*/	  
+/* проверка что правильно выводится полное имя "Фамилия Имя" на английском	  
 	  
 	    @Tag ("Positive")
 		@Test
@@ -103,7 +115,47 @@ public class StudentTest {
 			String actualFullName=s.getFullName();
 			assertEquals(expectedFullName, actualFullName);	
 	    }	  
-	  
-	  
-	  
+*/	  
+	// Параметризированные тесты  
+	 
+// Параметризированный тест для метода расчета среднего возраста
+	 @ParameterizedTest
+	 @CsvSource({"20", "18", "35", "50", "27"})
+	 void testWithCsvSource(String StudentAge) {
+		 Student[] students = {new Student("Alexandr", "Ivanov", 20), new Student("Vladimir", "Petrov", 18),
+					new Student("Aleksey", "Alekseev", 35), new Student("Oleg", "СидороВ", 35)};
+  /* System.out.println(StudentAge+ " ");
+	System.out.println(Student.avgAge(students)); 
+  */
+	//assertEquals(Integer.parseInt(StudentAge),Integer.toString(Student.avgAge(students)));
+		 
+	assertEquals(Integer.parseInt(StudentAge),Student.avgAge(students));	
+	 } 
+	 
+	 	 
+	
+// Динамические тесты
+	@Tag ("Positive") 
+	@TestFactory
+	Collection<DynamicTest> dynamicTestGetLastName() {
+		Student s1 = new Student("Alexandr", "Ivanov", 20);
+		Student s2 = new Student("Vladimir", "Petrov", 18);
+		Student s3 = new Student("Aleksey", "Alekseev", 35);
+	
+	return Arrays.asList(
+			DynamicTest.dynamicTest("test1", () ->assertEquals(s1.getLastName(),"Ivanov")),
+			DynamicTest.dynamicTest("test2", () ->assertEquals(s2.getLastName(),"Petrov")),
+			DynamicTest.dynamicTest("test3", () ->assertEquals(s3.getLastName(),"Alekseev")),
+	
+			DynamicTest.dynamicTest("test4", () ->assertEquals(s1.getFirstName(),"Alexandr")),
+			DynamicTest.dynamicTest("test5", () ->assertEquals(s2.getFirstName(),"Vladimir")),
+			DynamicTest.dynamicTest("test6", () ->assertEquals(s3.getFirstName(),"Aleksey")),
+			
+			DynamicTest.dynamicTest("test7", () ->assertEquals(s1.getAge(),20)),
+			DynamicTest.dynamicTest("test8", () ->assertEquals(s2.getAge(),18)),
+			DynamicTest.dynamicTest("test9", () ->assertEquals(s3.getAge(),35)));
+	}
+	 
+	 
+	 
 }

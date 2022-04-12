@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="online_tusur.unit_online_tusur.StudentTest" time="0.05" tests="4" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="online_tusur.unit_online_tusur.StudentTest" time="0.109" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\setup\AppData\Local\Temp\surefire2490892355636689256\surefirebooter6500279380808069889.jar C:\Users\setup\AppData\Local\Temp\surefire2490892355636689256 2022-03-26T20-17-03_088-jvmRun1 surefire6133857782358005551tmp surefire_03171801204196465239tmp"/>
+    <property name="sun.java.command" value="C:\Users\setup\AppData\Local\Temp\surefire9145193186026634834\surefirebooter7321725232127580707.jar C:\Users\setup\AppData\Local\Temp\surefire9145193186026634834 2022-04-06T00-06-02_657-jvmRun1 surefire1567531864049207937tmp surefire_05878840052241212962tmp"/>
     <property name="surefire.test.class.path" value="C:\work\Eclipse\unit-online-tusur\target\test-classes;C:\work\Eclipse\unit-online-tusur\target\classes;C:\Users\setup\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\setup\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\setup\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\setup\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\setup\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\setup\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\setup\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\setup\.m2\repository\org\junit\platform\junit-platform-runner\1.6.0\junit-platform-runner-1.6.0.jar;C:\Users\setup\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\setup\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\setup\.m2\repository\org\junit\platform\junit-platform-launcher\1.6.0\junit-platform-launcher-1.6.0.jar;C:\Users\setup\.m2\repository\org\junit\platform\junit-platform-suite-api\1.6.0\junit-platform-suite-api-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\setup"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\setup\AppData\Local\Temp\surefire2490892355636689256\surefirebooter6500279380808069889.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\setup\AppData\Local\Temp\surefire9145193186026634834\surefirebooter7321725232127580707.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,9 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testP1_1" classname="online_tusur.unit_online_tusur.StudentTest" time="0.027"/>
-  <testcase name="testP1_2" classname="online_tusur.unit_online_tusur.StudentTest" time="0"/>
-  <testcase name="testP2_1" classname="online_tusur.unit_online_tusur.StudentTest" time="0.018">
+  <testcase name="testP1_1" classname="online_tusur.unit_online_tusur.StudentTest" time="0.018"/>
+  <testcase name="testP1_2" classname="online_tusur.unit_online_tusur.StudentTest" time="0.004"/>
+  <testcase name="testP2_1" classname="online_tusur.unit_online_tusur.StudentTest" time="0.028">
     <failure message="expected: &lt;Пабло Диего Хосе Франциско де Паула Хуан Непомукено Криспин Криспиано де ла Сантисима Тринидад Руиз&gt; but was: &lt;Пабло диего хосе франциско де паула хуан непомукено криспин криспиано де ла сантисима тринидад руиз&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Пабло Диего Хосе Франциско де Паула Хуан Непомукено Криспин Криспиано де ла Сантисима Тринидад Руиз> but was: <Пабло диего хосе франциско де паула хуан непомукено криспин криспиано де ла сантисима тринидад руиз>
 	at online_tusur.unit_online_tusur.StudentTest.testP2_1(StudentTest.java:78)
 ]]></failure>
