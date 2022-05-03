@@ -11,18 +11,20 @@ import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 
-
+@Execution(ExecutionMode.CONCURRENT)
 public class StudentTest {
 	/*объект тестового класса  Student*/
-//	private Student s = new Student();	 	   
+	private Student s = new Student();	 	   
 //	private Student s1 = new Student();
 //	private Student s2 = new Student();
 	    
-/* проверка возраста студента, выходящего за диапазон 
+ //проверка возраста студента, выходящего за диапазон 
 	@Tag ("Negative")
 	@Test
 	  void testN1_1() {
@@ -30,9 +32,13 @@ public class StudentTest {
 		s.setAge(age);
 	    int expectedAge = 18;
 		int actualsAge=s.getAge();
+		
+		long id=Thread.currentThread().getId();
+		System.out.println(id);
+		
 		assertEquals(expectedAge, actualsAge);	
 	  }
-/* проверка имени студента, начинающегося со строчной буквы
+// проверка имени студента, начинающегося со строчной буквы
 	@Tag ("Negative")
 	@Test
 	  void testN1_2() {
@@ -40,9 +46,13 @@ public class StudentTest {
 		s.setLastName(name);
 		String expectedName="Светлана";
 		String actualName=s.getLastName();
+		
+		long id=Thread.currentThread().getId();
+		System.out.println(id);
+		
 	    assertEquals(expectedName, actualName);	
 	  }
-/* проверка что все буквы фамилия, кроме первой, преобразуется в строчные буквы 
+// проверка что все буквы фамилия, кроме первой, преобразуется в строчные буквы 
 	
 	@Tag ("Negative")
 	@Test
@@ -51,9 +61,13 @@ public class StudentTest {
 		s.setLastName(lname);
 		String expectedLName="Иванова";
 		String actualLName=s.getLastName();
+		
+		long id=Thread.currentThread().getId();
+		System.out.println(id);
+		
 	    assertEquals(expectedLName, actualLName);	
 	  }
-/* проверка что правильно выводится полное имя "Фамилия Имя" 
+// проверка что правильно выводится полное имя "Фамилия Имя" 
 	
 	@Tag ("Negative")
 	@Test
@@ -64,10 +78,14 @@ public class StudentTest {
 		s.setLastName(lname);
 		String expectedFullName="Сидорова Анна";
 		String actualFullName=s.getFullName();
+		
+		long id=Thread.currentThread().getId();
+		System.out.println(id);
+		
 		assertEquals(expectedFullName, actualFullName);	
 	  }
 
-/* проверка что правильно выводится Имя"   
+// проверка что правильно выводится Имя"   
 	
 	  @Tag ("Positive")
 	  @Test 
@@ -76,6 +94,10 @@ public class StudentTest {
 		  s.setFirstName(name);
 		  String expectedName="Sergey";
 		  String actualName=s.getFirstName();
+		  
+		long id=Thread.currentThread().getId();
+		System.out.println(id);
+		  
 	    assertEquals(expectedName, actualName);
 	   }
 
@@ -87,10 +109,14 @@ public class StudentTest {
 		  s.setFirstName(name);
 		  String expectedName="Пабло Диего Хосе Франциско де Паула Хуан Непомукено Криспин Криспиано де ла Сантисима Тринидад Руиз";
 		  String actualName=s.getFirstName();
+		  
+		long id=Thread.currentThread().getId();
+		System.out.println(id);
+		  
 	    assertEquals(expectedName, actualName);
 	   }
 
-/* проверка что правильно выводится фамилия" 
+// проверка что правильно выводится фамилия" 
 	  
 	  @Tag ("Positive")
 	  @Test 
@@ -99,10 +125,14 @@ public class StudentTest {
 		  s.setLastName(name);
 		  String expectedLName="Тупиков";
 		  String actualLName=s.getLastName();
+		  
+		  long id=Thread.currentThread().getId();
+			System.out.println(id);
+		  
 	    assertEquals(expectedLName, actualLName);
 	   }
 
-/* проверка что правильно выводится полное имя "Фамилия Имя" на английском	  
+// проверка что правильно выводится полное имя "Фамилия Имя" на английском	  
 	  
 	    @Tag ("Positive")
 		@Test
@@ -113,9 +143,13 @@ public class StudentTest {
 			s.setLastName(lname);
 			String expectedFullName="Tupikov Sergey";
 			String actualFullName=s.getFullName();
+			
+			long id=Thread.currentThread().getId();
+			System.out.println(id);
+			
 			assertEquals(expectedFullName, actualFullName);	
 	    }	  
-*/	  
+  
 	// Параметризированные тесты  
 	 
 // Параметризированный тест для метода расчета среднего возраста
@@ -128,12 +162,15 @@ public class StudentTest {
 	System.out.println(Student.avgAge(students)); 
   */
 	//assertEquals(Integer.parseInt(StudentAge),Integer.toString(Student.avgAge(students)));
-		 
+
+		 long id=Thread.currentThread().getId();
+			System.out.println(id);
+		 		 
 	assertEquals(Integer.parseInt(StudentAge),Student.avgAge(students));	
 	 } 
 	 
 	 	 
-	
+/*	
 // Динамические тесты
 	@Tag ("Positive") 
 	@TestFactory
@@ -156,6 +193,6 @@ public class StudentTest {
 			DynamicTest.dynamicTest("test9", () ->assertEquals(s3.getAge(),35)));
 	}
 	 
-	 
+*/	 
 	 
 }

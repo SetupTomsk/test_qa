@@ -1,0 +1,12 @@
+Отчет
+Success of test cases and its details are : testWithTestNG3
+Success of test cases and its details are : testWithTestNG3
+Success of test cases and its details are : testWithTestNG3
+Failure of test cases and its details are : testWithTestNG3
+Failure of test cases and its details are : testWithTestNG1
+Failure of test cases and its details are : testWithTestNG1
+Failure of test cases and its details are : testWithTestNG1
+Success of test cases and its details are : testWithTestNG1
+Failure of test cases and its details are : testWithTestNG
+This is onFinish Passed method4
+This is onFinish Failed method5

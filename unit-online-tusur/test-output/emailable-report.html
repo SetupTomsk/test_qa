@@ -8,41 +8,34 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">69</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">225</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">online_tusur.unit_online_tusur.Test_ng</td><td><a href="#m0">testWithCsvSource</a></td><td rowspan="1">1649606037078</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">online_tusur.unit_online_tusur.Test_ng</td><td><a href="#m0">testWithTestNG</a></td><td rowspan="1">1651595811580</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m1">testWithTestNG1</a></td><td rowspan="3">1651595811517</td><td rowspan="3">7</td></tr><tr class="failedeven"><td><a href="#m2">testWithTestNG1</a></td></tr><tr class="failedeven"><td><a href="#m3">testWithTestNG1</a></td></tr><tr class="failedeven"><td><a href="#m4">testWithTestNG3</a></td><td rowspan="1">1651595811482</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">online_tusur.unit_online_tusur.Test_ng</td><td><a href="#m5">testWithTestNG1</a></td><td rowspan="1">1651595811566</td><td rowspan="1">12</td></tr><tr class="passedeven"><td><a href="#m6">testWithTestNG3</a></td><td rowspan="3">1651595811456</td><td rowspan="3">3</td></tr><tr class="passedeven"><td><a href="#m7">testWithTestNG3</a></td></tr><tr class="passedeven"><td><a href="#m8">testWithTestNG3</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">online_tusur.unit_online_tusur.Test_ng#testWithCsvSource</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Cannot inject @Test annotated Method [testWithCsvSource] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>Test</h2><h3 id="m0">online_tusur.unit_online_tusur.Test_ng#testWithTestNG</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>0</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;27&gt;
+	at online_tusur.unit_online_tusur.Test_ng.testWithTestNG(Test_ng.java:30)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">online_tusur.unit_online_tusur.Test_ng#testWithTestNG1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>20</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;20&gt; but was:&lt;27&gt;
+	at online_tusur.unit_online_tusur.Test_ng.testWithTestNG1(Test_ng.java:51)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">online_tusur.unit_online_tusur.Test_ng#testWithTestNG1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>35</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;35&gt; but was:&lt;27&gt;
+	at online_tusur.unit_online_tusur.Test_ng.testWithTestNG1(Test_ng.java:51)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">online_tusur.unit_online_tusur.Test_ng#testWithTestNG1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>18</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;18&gt; but was:&lt;27&gt;
+	at online_tusur.unit_online_tusur.Test_ng.testWithTestNG1(Test_ng.java:51)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">online_tusur.unit_online_tusur.Test_ng#testWithTestNG3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Alla-Victoriya</td><td>Alla-Victoriya</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected:&lt;Alla-Victoriya&gt; but was:&lt;Alla-victoriya&gt;
+	at online_tusur.unit_online_tusur.Test_ng.testWithTestNG3(Test_ng.java:74)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">online_tusur.unit_online_tusur.Test_ng#testWithTestNG1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>27</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">online_tusur.unit_online_tusur.Test_ng#testWithTestNG3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Vladimir</td><td>Vladimir</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">online_tusur.unit_online_tusur.Test_ng#testWithTestNG3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>AleXandR</td><td>Alexandr</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">online_tusur.unit_online_tusur.Test_ng#testWithTestNG3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>aleksey</td><td>Aleksey</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
