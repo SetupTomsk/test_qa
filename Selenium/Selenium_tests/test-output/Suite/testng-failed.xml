@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="4" name="ChromeTest1(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Selenium_test.Selenium_tests.TriangleGridTestsNG">
+        <methods>
+          <include name="testn_3"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Selenium_test.Selenium_tests.TriangleGridTestsNG -->
+    </classes>
+  </test> <!-- ChromeTest1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

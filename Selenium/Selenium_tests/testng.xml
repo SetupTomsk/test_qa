@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="4">
+ 
+ <test name="FirefoxTest1" verbose="1" parallel="true">
+<parameter name="browser" value="firefox" />
+<classes>
+<class name="Selenium_test.Selenium_tests.TriangleGridTestsNG">
+<methods>
+<include name="testn_1"/>
+</methods>
+</class>
+</classes>
+</test>
+
+ <test name="Edge1" verbose="1" parallel="true">
+<parameter name="browser" value="edge" />
+<classes>
+<class name="Selenium_test.Selenium_tests.TriangleGridTestsNG">
+<methods>
+<include name="testn_1_1"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="ChromeTest2" verbose="1" parallel="true">
+<parameter name="browser" value="chrome" />
+<classes>
+<class name="Selenium_test.Selenium_tests.TriangleGridTestsNG">
+<methods>
+<include name="testn_2"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="ChromeTest3" verbose="1" parallel="true">
+<parameter name="browser" value="chrome" />
+<classes>
+<class name="Selenium_test.Selenium_tests.TriangleGridTestsNG">
+<methods>
+<include name="testn_3"/>
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="ChromeTest4" verbose="1" parallel="true">
+<parameter name="browser" value="chrome" />
+<classes>
+<class name="Selenium_test.Selenium_tests.TriangleGridTestsNG">
+<methods>
+<include name="testn_4"/>
+</methods>
+</class>
+</classes>
+
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

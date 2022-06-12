@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="128339" started-at="2022-06-12T13:44:14 GMT+07:00" finished-at="2022-06-12T13:46:23 GMT+07:00">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="128339" started-at="2022-06-12T13:44:14 GMT+07:00" finished-at="2022-06-12T13:46:23 GMT+07:00">
+      <class name="Selenium_test.Selenium_tests.TriangleGridTestsNGHub">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="setUp" is-config="true" duration-ms="11" started-at="2022-06-12T13:44:14 GMT+07:00" finished-at="2022-06-12T13:44:14 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testn_1()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_1" duration-ms="14894" started-at="2022-06-12T13:44:14 GMT+07:00" finished-at="2022-06-12T13:44:29 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_1 -->
+        <test-method status="PASS" signature="testn_1_1()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_1_1" duration-ms="7708" started-at="2022-06-12T13:44:29 GMT+07:00" finished-at="2022-06-12T13:44:37 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_1_1 -->
+        <test-method status="PASS" signature="testn_2()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_2" duration-ms="12498" started-at="2022-06-12T13:44:37 GMT+07:00" finished-at="2022-06-12T13:44:50 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_2 -->
+        <test-method status="PASS" signature="testn_3()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_3" duration-ms="5636" started-at="2022-06-12T13:44:50 GMT+07:00" finished-at="2022-06-12T13:44:55 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_3 -->
+        <test-method status="PASS" signature="testn_4()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_4" duration-ms="7633" started-at="2022-06-12T13:44:55 GMT+07:00" finished-at="2022-06-12T13:45:03 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_4 -->
+        <test-method status="PASS" signature="testn_5()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_5" duration-ms="16033" started-at="2022-06-12T13:45:03 GMT+07:00" finished-at="2022-06-12T13:45:19 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_5 -->
+        <test-method status="PASS" signature="testn_6()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_6" duration-ms="15978" started-at="2022-06-12T13:45:19 GMT+07:00" finished-at="2022-06-12T13:45:35 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_6 -->
+        <test-method status="PASS" signature="testn_7()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testn_7" duration-ms="7442" started-at="2022-06-12T13:45:35 GMT+07:00" finished-at="2022-06-12T13:45:42 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testn_7 -->
+        <test-method status="PASS" signature="testp_1()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testp_1" duration-ms="5275" started-at="2022-06-12T13:45:42 GMT+07:00" finished-at="2022-06-12T13:45:48 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testp_1 -->
+        <test-method status="PASS" signature="testp_2()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testp_2" duration-ms="5560" started-at="2022-06-12T13:45:48 GMT+07:00" finished-at="2022-06-12T13:45:53 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testp_2 -->
+        <test-method status="PASS" signature="testp_3()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testp_3" duration-ms="11942" started-at="2022-06-12T13:45:53 GMT+07:00" finished-at="2022-06-12T13:46:05 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testp_3 -->
+        <test-method status="PASS" signature="testp_4()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testp_4" duration-ms="12278" started-at="2022-06-12T13:46:05 GMT+07:00" finished-at="2022-06-12T13:46:17 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testp_4 -->
+        <test-method status="PASS" signature="testp_5()[pri:0, instance:Selenium_test.Selenium_tests.TriangleGridTestsNGHub@1188e820]" name="testp_5" duration-ms="5293" started-at="2022-06-12T13:46:17 GMT+07:00" finished-at="2022-06-12T13:46:23 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testp_5 -->
+      </class> <!-- Selenium_test.Selenium_tests.TriangleGridTestsNGHub -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
