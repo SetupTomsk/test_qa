@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -58,7 +59,7 @@ public class TriangleGridTestsNGHub {
   public void testn_1_1() throws Throwable {
 	  System.out.println("Executing on Edge");
 	    System.setProperty("webdriver.edge.driver", "C:\\work\\Selenium\\msedgedriver.exe");
-	    FirefoxOptions options = new FirefoxOptions();
+	    EdgeOptions options = new EdgeOptions();
 		  DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);		
 			capabilities.setBrowserName("firefox");
